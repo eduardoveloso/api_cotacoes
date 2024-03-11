@@ -1,0 +1,17 @@
+ARG PYTHON_VERSION=3.10.7
+
+FROM python:${PYTHON_VERSION}-slim as base
+
+LABEL Maintainer="EduardoVeloso"
+
+ENV PYTHONDONTWRITEBYTECODE=1
+
+ENV PYTHONUNBUFFERED=1
+
+WORKDIR /app
+
+COPY . .
+
+EXPOSE 3030
+
+CMD python3 ./app/main.py
