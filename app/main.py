@@ -7,10 +7,14 @@ coin_list = [
     "BTC-BRL"
 ]
 
+directory = "./data"
+
 for coin in coin_list:
 
     requests = exchange_rate_api(coin=coin)
 
     file = requests.get_data()
+
+    writer = LocalDataWriter(coin=coin, json_data=file, directory=directory)
 
     LocalDataWriter(coin=coin, json_data=file)
