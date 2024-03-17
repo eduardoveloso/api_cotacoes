@@ -12,3 +12,6 @@ Projeto desenvolvido em Python com objetivo de capturar a cotação de diferente
 | pctChange | Porcentagem Variação |
 | high | Máximo |
 | low | Mínimo |
+
+## Links úteis
+* [Documentação API](https://docs.awesomeapi.com.br/api-de-moedas)
