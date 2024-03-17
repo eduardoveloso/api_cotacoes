@@ -1,11 +1,7 @@
 from api_requests import exchange_rate_api
 from data_writer import LocalDataWriter
 
-coin_list = [
-    "USD-BRL",
-    "EUR-BRL",
-    "BTC-BRL"
-]
+coin_list = ["USD-BRL", "EUR-BRL", "BTC-BRL"]
 
 directory = "./data"
 
@@ -17,4 +13,4 @@ for coin in coin_list:
 
     writer = LocalDataWriter(coin=coin, json_data=file, directory=directory)
 
-    LocalDataWriter(coin=coin, json_data=file)
+    writer.save()

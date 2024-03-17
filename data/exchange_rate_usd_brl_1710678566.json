@@ -1,0 +1,15 @@
+{
+    "USDBRL": {
+        "code": "USD",
+        "codein": "BRL",
+        "name": "Dólar Americano/Real Brasileiro",
+        "high": "5.0018",
+        "low": "4.9818",
+        "varBid": "0.0062",
+        "pctChange": "0.12",
+        "bid": "4.9949",
+        "ask": "4.9965",
+        "timestamp": "1710536398",
+        "create_date": "2024-03-15 17:59:58"
+    }
+}
