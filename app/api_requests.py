@@ -5,7 +5,7 @@ import requests
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO)
 
-class exchange_rate_api():
+class ExchangeRateApi():
     def __init__(self, coin: str) -> None:
         """
         Initializes the exchange_rate_api class with the specified currency code.
