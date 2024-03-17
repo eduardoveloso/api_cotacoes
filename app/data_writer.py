@@ -5,6 +5,10 @@ import time
 from azure.storage.blob import BlobServiceClient, BlobClient, ContainerClient
 from dotenv import load_dotenv
 import os
+import logging
+
+logger = logging.getLogger(__name__)
+logging.basicConfig(level=logging.INFO)
 
 load_dotenv(".env")
 
@@ -35,7 +39,7 @@ class LocalDataWriter:
 
     def save(self) -> None:
         self.write_to_file()
-        print(f"File {self.filename} saved successfully in {self.directory}")
+        logger.info(f"File {self.filename} saved successfully in {self.directory}")
 
 
 class BlobDataWriter:

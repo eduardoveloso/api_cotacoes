@@ -1,0 +1,15 @@
+{
+    "BTCBRL": {
+        "code": "BTC",
+        "codein": "BRL",
+        "name": "Bitcoin/Real Brasileiro",
+        "high": "345080",
+        "low": "326148",
+        "varBid": "-7128",
+        "pctChange": "-2.07",
+        "bid": "337102",
+        "ask": "337267",
+        "timestamp": "1710678553",
+        "create_date": "2024-03-17 09:29:13"
+    }
+}
